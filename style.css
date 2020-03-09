@@ -4,6 +4,13 @@
 	box-sizing: border-box;
 	font-family: 'Proxima Nova Rg';
 }
+body {
+	margin: auto !important;
+	width: 1220px;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	max-width: 100%;
+}
 
 .content {
 	width: 870px;
@@ -360,6 +367,150 @@ span.orange {
 .btn:hover {
 	opacity: 0.7;
 }
+
+.our-specialists__content h2 {
+	font-size: 18px;
+	text-align: center;
+}
+.our-specialists__content,
+.ouradventages-block {
+	margin-bottom: 50px;
+}
+.ouradventages-block__content {
+	display: flex;
+	justify-content: center;
+}
+.ouradventages-block__content p{
+	text-align: left;
+}
+.cost-block__line .line {
+	height: 1px;
+	width: 35%;
+	display: block;
+	background-color:
+	#777;
+	position: absolute;
+	top: 10px;
+}
+.cost-block__line {
+	position: relative;
+	text-align: center;
+	font-size: 18px;
+}
+.cost-block__line .line:last-child {
+	right: 0;
+}
+.cost-block__line .line:first-child {
+	left: 0;
+}
+.cost-block__price {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.cost-block__price span {
+	transform: skew(-15deg);
+	background: #ff7f00;
+	width: 140px;
+	margin: 0 auto;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	display: block;
+	padding: 5px;
+}
+.cost-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.cost-grid .cost-item {
+	width: 50%;
+	position: relative;
+	overflow: hidden;
+	height: 250px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.cost-grid:last-child .cost-item {
+	width: 33%;
+	position: relative;
+	overflow: hidden;
+	height: 200px;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.mt-50 {
+	margin-top: 50px;
+}
+.cost-item .cost-item__info .info_skew {
+	width: 100%;
+	transform: skew(-15deg);
+	background-color: #167891;
+	padding: 15px;
+	left: -15px;
+	position: relative;
+	padding-left: 25px;
+}
+.cost-item .cost-item__info {
+	position: absolute;
+	bottom: 0;
+	color:#fff;
+	text-align: left;
+}
+.cost-item .cost-item__name {
+	color: #fff;
+	font-weight: bold;
+	font-size: 16px;
+	transform: skew(15deg);
+}
+.cost-item .cost-item__descr p{
+	color: #fff;
+	font-size: 16px;
+	text-align: left;
+	margin: 0;
+	transform: skew(15deg);
+	padding-left: 10px;
+	max-width: 100%;
+}
+.cost-block__btn.btn {
+	text-align: center;
+	margin-top: 80px;
+} 
+.cost-block__btn a {
+	padding: 15px 20px;
+	color: #fff;
+	cursor: pointer;
+	text-decoration:none;
+	background: #ff7f00;
+	transition: all .5s ease-in-out;
+}
+.table-block table {
+	width: 100%;
+	font-size: 14px;
+}
+.table-block tr,td {
+	padding: 5px;
+	padding-left: 15px;
+}
+.table-block tr:nth-child(2n) {
+	background-color: #ffefe0;
+}
+.table-block thead tr {
+	background-color: #ffefe0;
+	font-size: 18px; 
+}
+.table-block #type_work {
+	font-size: 16px; 
+}
+.table-block #name-category {
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
 @media(max-width:850px)
 {
 	.team-card {
@@ -400,10 +551,19 @@ span.orange {
 		width: 80%;
 		margin: 0 auto;
 	}
+	.cost-block__line .line {
+		width: 30%;
+	}
 }
 @media(max-width:600px)
 {
 	.services-grid__items .grid-item{
+		width: 100%;
+	}
+	.cost-block__line .line {
+		width: 13%;
+	}
+	.cost-grid .cost-item,.cost-grid:last-child .cost-item {
 		width: 100%;
 	}
 }
