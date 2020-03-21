@@ -29,4 +29,11 @@ $(document).ready(function() {
 		
 	})
 
+	if(document.location.href == "https://osdnyasha.github.io/krovlya_montazh/index4.html") {
+		$('.absolute-btn .first').addClass('active');
+	}
+	else {
+		$('.absolute-btn .scnd').addClass('active');
+	}
+
 });
