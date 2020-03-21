@@ -33,6 +33,9 @@ body {
 	width: 200px;
 	transition: all .1s ease-in-out;
 }
+.absolute-btn a.active {
+	background-color: #ff7f00;
+}
 .absolute-btn a:hover {
 	background-color: #ff7f00;
 }
