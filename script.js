@@ -10,3 +10,23 @@
      })
 }
 )(jQuery);
+
+
+$(document).ready(function() {
+	$('.choose__parent li').click(function() {
+		$('.choose__parent li').removeClass('active');
+		$('.choose__child li').removeClass('active');
+		$(this).toggleClass('active');
+		$('.card-category').fadeIn();
+	})
+
+	$('.choose__child li').click(function() {
+		$('.choose__child li').removeClass('active');
+		$(this).toggleClass('active');
+		var cur_id = $(this).attr('id');
+		$('.card-category').fadeOut(0);
+		$('.card-category.' + cur_id).fadeIn();
+		
+	})
+
+});

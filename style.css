@@ -16,6 +16,7 @@ body {
 	width: 870px;
 	float: right;
 	max-width: 100%;
+	margin-top: 150px;
 }
 .block__title {
 	padding: 30px;
@@ -511,6 +512,136 @@ span.orange {
 	text-align: center;
 }
 
+/* gotovie resheniya */
+
+.choose-block .choose__parent, .choose-block .choose__child {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	flex-direction: row;
+}
+
+.choose-block .choose__parent li {
+	width: 275px;
+	height: 52px;
+	display: flex;
+	border: 1px solid #e0dede;
+	box-sizing: border-box; 
+	justify-content: center;
+	flex-direction: column;
+	margin-right: 15px;
+
+}
+.choose-block .choose__parent li a {
+	text-decoration: none;
+} 
+.choose-block .choose__parent li.active,
+.choose-block .choose__child li.active {
+	background-color: #177892;
+}
+.choose-block .choose__parent li.active a,
+.choose-block .choose__child li.active a {
+	color: white;
+}
+
+.choose-block .choose__child {
+	border: 1px solid #e0dede;
+	width: 580px;
+	margin-top: 30px;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+}
+.choose-block .choose__child li {
+	display: flex;
+	box-sizing: border-box; 
+	justify-content: center;
+	flex-direction: column;
+	height: 36px;
+	width: 135px;
+}
+.choose-block .choose__child li.active {
+	padding: 5px;
+}  
+
+.cards-category {
+	margin-bottom: 150px;
+}
+.cards-category .cards-grid {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.cards-grid .card-category {
+	margin-top: 10px;
+	width: 49%;
+	height: 288px;
+	background-color: #225c6c;
+	background-image: url(img/card-bg.png);
+	color: white;
+	position: relative;
+}
+.cards-grid .card-category:nth-child(4n+1) {
+	background-image: url(img/card-bg2.png);
+}
+.cards-grid .card-category:nth-child(4n) {
+	background-image: url(img/card-bg2.png);
+}
+.card-category .card-name {
+	margin-top: 75px;
+	text-align: center;
+}
+.card-category .card-name h3 {
+	font-size: 24px;
+}
+.card-category .card-descr p {
+	font-size: 18px;
+	margin-top: 10px;
+}
+.card-category .card-descr p b {
+	font-size: 30px;
+}
+.card-category .card-btn {
+	margin-top: 15px;
+}
+.card-category .card-btn a {
+	display: block;
+	width: 205px;
+	height: 45px;
+	background-color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 45px;
+}
+.card-category .card-special {
+	width: 120px;
+	height: 35px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 15px;
+	text-align: center;
+	line-height: 35px;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+}
+.card-category.prem .card-special {
+	background-color: #ffdd24;
+}
+.card-category.biss .card-special{
+	background-color: #cf571c;
+}
+.card-category.opt .card-special{
+	background-color: #1b9cee;
+}
+.card-category.eco .card-special{
+	background-color: #3fda81;
+}
+
+
 @media(max-width:850px)
 {
 	.team-card {
@@ -553,6 +684,30 @@ span.orange {
 	}
 	.cost-block__line .line {
 		width: 30%;
+	}
+}@media(max-width:700px)
+{
+	.cards-category .card-category {
+		width: 100%;
+	}
+	.choose-block .choose__parent {
+		width: 60%;
+		margin: 0 auto;
+	}
+	.choose-block .choose__child {
+		flex-direction: column;
+		width: 60%;
+
+	}
+	.choose-block .choose__child li,
+	.choose-block .choose__parent li {
+		width: 100%;
+		margin: 0;
+		margin-top: 10px;
+	}
+	.choose-block .choose__child li:first-child,
+	.choose-block .choose__parent li:first-child {
+		margin-top: 0;
 	}
 }
 @media(max-width:600px)
