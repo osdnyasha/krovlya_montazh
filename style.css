@@ -782,7 +782,7 @@ span.orange {
 }
 
 .advantgs-block,
-.whatNext-block	{
+.whatnext-block	{
 	margin-top: 90px;
 	min-height: 180px;
 }
@@ -790,7 +790,7 @@ span.orange {
 	line-height: 30px;
 }
 
-.tezis-block,.advantgs-block,.whatNext-block {
+.tezis-block,.advantgs-block,.whatnext-block {
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: contain;
@@ -803,12 +803,12 @@ span.orange {
 .advantgs-block {
 	background-image: url(img/adventgs.png);
 }
-.whatNext-block {
-	background-image: url(img/whatNext.png);
+.whatnext-block {
+	background-image: url(img/whatnext.png);
 }
 
 
-.whatNext-block {
+.whatnext-block {
 	margin-bottom: 150px;
 }
 @media(max-width:850px)
